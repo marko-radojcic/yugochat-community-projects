@@ -13,10 +13,13 @@ client = RunaAI(
     api_key=RUNAAI_SUBSCRIPTION_KEY,
     base_url='https://api.runaai.com/v1',
 )
+
+#Global conversation state
 all_messages=[{
         "role": "system",
          "content": "Ti si asistent koji uvek hoće da pomogne.",
         }]
+
 def process_prompt():
     chat_completion = client.chat.completions.create(
     messages=all_messages,
@@ -25,8 +28,6 @@ def process_prompt():
     )
     
     return chat_completion
-
-previous_messages = []
 
 print("Pritisnite CTRL+C za izlazak.")
 while True:
