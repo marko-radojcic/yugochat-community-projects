@@ -21,6 +21,7 @@ user_name=""
 ai_name="YugoGPT"
 
 while True:
+    print("\n\n")
     print("Odaberite parametar za promenu ili ENTER za nastavak. :")
     print(f"temperatura - (t)={temperature}")
     print(f"top_p - (p)={top_p}")
