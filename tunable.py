@@ -26,7 +26,7 @@ while True:
     user_input = input("")
     if user_input != "":
         if user_input=="t":
-            temperature = float(input("Temperature:"))
+            temperature = float(input("Temperatura:"))
         if user_input=="p":
             top_p = float(input("top_p:"))
     else:
