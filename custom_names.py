@@ -44,7 +44,7 @@ while True:
 #Global conversation state
 all_messages=[{
         "role": "system",
-         "content": f"Ti si asistent koji uvek hoće da pomogne. Zoveš se {ai_name}.",
+         "content": f"Ti si asistent koji uvek hoće da pomogne. Zoveš se {ai_name}. Razgovaraš sa {user_name}.",
         }]
 
 def process_prompt():
