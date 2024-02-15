@@ -52,7 +52,7 @@ def process_prompt():
 print("Pritisnite CTRL+C za izlazak ili upišite reč izađi.")
 while True:
     prompt = input(">>>")
-    if prompt == "izađi":
+    if (prompt == "izađi" or prompt=="exit"):
         quit()
     all_messages.append({"role" : "user", "content" : prompt})
     chat_completion = process_prompt()
